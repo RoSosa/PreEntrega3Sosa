@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tercera PreEntrega JS</title>
+</head>
+<body>
+  <h1>Glizzy</h1>
+  <div id="products">
+    <h2>Productos Disponibles</h2>
+    <ul>
+      <li>Socks - $10 - Cantidad: 5 <button onclick="addToCart('Socks', 10)">Agregar al Carrito</button></li>
+      <li>White Hoodie - $20 - Cantidad: 3 <button onclick="addToCart('White Hoodie', 20)">Agregar al Carrito</button></li>
+      <li>White T-Shirt - $15 - Cantidad: 7 <button onclick="addToCart('White T-Shirt', 15)">Agregar al Carrito</button></li>
+    </ul>
+  </div>
+  <div id="cart">
+    <h2>Carrito de Compras</h2>
+    <ul id="cart-list">
+    </ul>
+    <p>Total: $<span id="total">0</span></p>
+    <button onclick="clearCart()">Vaciar Carrito</button>
+    <button onclick="checkout()">Realizar Compra</button>
+  </div>
+
+  <div id="notifications"></div> <!-- Espacio para notificaciones -->
+
+  <!-- Enlace al archivo JavaScript -->
+  <script src="carrito.js"></script>
+</body>
+</html>
